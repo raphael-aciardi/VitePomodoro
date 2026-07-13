@@ -1,4 +1,5 @@
 import type React from 'react';
+import styles from './styles.module.css';
 
 type DefaltInputProps = {
   id: string;
@@ -19,7 +20,13 @@ export function DefaultInput({
         </label>
       )}
 
-      <input id={id} type={type} {...rest} />
+      <input
+        className={styles.input}
+        id={id}
+        type={type}
+        {...rest}
+        placeholder='Digite algo'
+      />
     </>
   );
 }

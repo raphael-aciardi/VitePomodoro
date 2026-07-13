@@ -1,0 +1,12 @@
+.cycles {}
+
+.cycle-dots {
+  display: flex;
+}
+
+.cycle-dot {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
