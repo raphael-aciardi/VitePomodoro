@@ -5,7 +5,12 @@ type DefaltInputProps = {
   labelText?: string;
 } & React.ComponentProps<'input'>;
 
-export function DefaultInput({ id, type, labelText }: DefaltInputProps) {
+export function DefaultInput({
+  id,
+  type,
+  labelText,
+  ...rest
+}: DefaltInputProps) {
   return (
     <>
       {labelText && (
@@ -14,7 +19,7 @@ export function DefaultInput({ id, type, labelText }: DefaltInputProps) {
         </label>
       )}
 
-      <input id={id} type={type} />
+      <input id={id} type={type} {...rest} />
     </>
   );
 }
