@@ -8,10 +8,9 @@ export function App() {
     <>
       <Container>
         <Heading>Logo</Heading>
-        <section>Logo</section>
       </Container>
       <Container>
-        <Heading>Testando meu componete heading</Heading>
+        <Heading>Menu</Heading>
       </Container>
     </>
   );
